@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - VINOX</title>
+  <title>Contact Vinox</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <h1>Contact Me</h1>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Your Phone Number" />
+    <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+    <button type="submit">Send</button>
+  </form>
 
-  <main class="container">
-    <h1>Contact Me</h1>
-    <form action="https://formspree.io/f/maypznlw" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Your Phone Number" />
-      <textarea name="message" rows="5" placeholder="Your Message (Work Inquiry)" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </main>
+  <p style="text-align:center; margin-top:40px;">
+    <a href="index.html">Portfolio</a> | <a href="about.html">About</a>
+  </p>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks for reaching out! I will contact you soon.');
+      form.reset();
+    });
+  </script>
 </body>
 </html>
