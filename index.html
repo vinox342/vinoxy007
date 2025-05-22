@@ -6,70 +6,7 @@
   <title>VINOX - My Work</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-  <script>
-  const canvas = document.getElementById("bg-canvas");
-  const ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  const icons = ["🎬", "💻", "📺", "📸", "✂️"];
-  const particles = [];
-
-  class Particle {
-    constructor() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-      this.size = 30 + Math.random() * 10;
-      this.speedX = -1 + Math.random() * 2;
-      this.speedY = -1 + Math.random() * 2;
-      this.icon = icons[Math.floor(Math.random() * icons.length)];
-    }
-
-    update() {
-      this.x += this.speedX;
-      this.y += this.speedY;
-
-      // Bounce
-      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-    }
-
-    draw() {
-      ctx.font = `${this.size}px Arial`;
-      ctx.fillStyle = "#0ff";
-      ctx.shadowColor = "#0ff";
-      ctx.shadowBlur = 10;
-      ctx.fillText(this.icon, this.x, this.y);
-    }
-  }
-
-  function init() {
-    for (let i = 0; i < 20; i++) {
-      particles.push(new Particle());
-    }
-  }
-
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      p.update();
-      p.draw();
-    });
-    requestAnimationFrame(animate);
-  }
-
-  init();
-  animate();
-
-  window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
-</script>
-
 <body>
-  <canvas id="bg-canvas"></canvas>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
