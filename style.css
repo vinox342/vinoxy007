@@ -1,138 +1,46 @@
-/* Basic Reset */
+/* Reset */
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Background animation */
+/* Body with animated gradient */
 body {
   min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
   background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
   background-size: 600% 600%;
   animation: gradientBG 15s ease infinite;
-  overflow-x: hidden;
-}
-
-@keyframes gradientBG {
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
-}
-
-/* Navigation */
-nav {
-  background: rgba(20,20,20,0.8);
-  padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-nav a {
-  color: #eee;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00ffea;
-}
-
-/* Container */
-.container {
-  max-width: 900px;
-  margin: 3rem auto 4rem;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-/* Title */
-h1 {
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  color: #00ffea;
-  text-shadow: 0 0 10px #00ffea;
-}
-
-h2 {
-  font-weight: 400;
-  margin-bottom: 2rem;
-  color: #ccc;
-}
-
-/* Video grid */
-.video-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-@media (max-width: 600px) {
-  .video-grid {
-    grid-template-columns: 1fr;
+/* Animated gradient movement */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,255,234,0.3);
+/* Example styling (optional) */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-/* About page */
-.about-text {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-/* Contact form */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-
-input, textarea {
-  padding: 0.8rem 1rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-input:focus, textarea:focus {
-  outline: 2px solid #00ffea;
-  background-color: #112f33;
-  color: #eee;
-}
-
-button {
-  background: #00ffea;
-  border: none;
-  padding: 1rem 1.5rem;
-  font-weight: 700;
+p {
   font-size: 1.1rem;
-  color: #0a0a0a;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: #00ccbb;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 2rem;
 }
