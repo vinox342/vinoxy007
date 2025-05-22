@@ -2,21 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Vinox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Vinox</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(270deg, #6b0f1a, #888888, #3b0f1a, #666666);
+      background-size: 800% 800%;
+      animation: waveBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes waveBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff66c4;
+      text-shadow: 0 0 10px #ff66c4aa;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-top: 20px;
+      color: #eeeeee;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>About Vinox</h1>
-  <p>
-    Hey! I’m a beginner video editor from Gujarat. I’m currently learning HitFilm and
-    working on improving my skills. I’m passionate about creating cool content and
-    excited to grow as a professional.
-  </p>
-
-  <p style="text-align:center; margin-top:40px;">
-    <a href="index.html">Portfolio</a> | <a href="contact.html">Contact</a>
-  </p>
+  <div class="container">
+    <h1>About Me</h1>
+    <p>
+      Hi, I’m <strong>Damor Jignesh</strong> — a beginner video editor from <strong>Gujarat</strong>. <br><br>
+      I’m currently diving into the world of editing using <strong>HitFilm</strong> and learning new tricks every day.  
+      What started as curiosity is now my creative playground.  
+      I love turning raw clips into something cool and expressive.  
+      <br><br>
+      I may be starting out, but I’m all in — ready to grow, create, and collaborate.  
+      Thanks for checking out my work. 🚀
+    </p>
+  </div>
 </body>
 </html>
-
