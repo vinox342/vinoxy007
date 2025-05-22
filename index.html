@@ -5,140 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VINOX – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(270deg, #6b0f1a, #888888, #3b0f1a, #666666);
-      background-size: 800% 800%;
-      animation: waveBG 15s ease infinite;
-      color: white;
-      min-height: 100vh;
-    }
-
-    @keyframes waveBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 10px #ff66c4aa;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    nav a:hover {
-      color: #ff66c4;
-    }
-
-    h1 {
-      font-size: 4rem;
-      text-align: center;
-      margin-top: 20px;
-      color: #ff66c4;
-      text-shadow: 0 0 15px #ff66c4aa;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #ffd700;
-    }
-
-    .video-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    iframe {
-      width: 320px;
-      height: 180px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #a83232aa;
-      border: none;
-    }
-
-    .contact-section {
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    input, textarea {
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #6b0f1a;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #a83232;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      iframe {
-        width: 90vw;
-        height: 50vw;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <h1>VINOX</h1>
+  <div class="logo-title">VINOX</div>
   <h2>My Work</h2>
 
   <div class="video-container">
@@ -148,17 +18,17 @@
     <iframe src="https://drive.google.com/file/d/1EHRpdFniPJ9wsxWCQqdsJlH9M5SW6KYY/preview" allow="autoplay"></iframe>
   </div>
 
-  <div class="contact-section">
-    <h2>Contact Me</h2>
-    <form action="https://formsubmit.co/damorj000@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Phone Number (optional)" />
-      <textarea name="message" placeholder="Your Message" rows="4"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/damorj000@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Phone Number (optional)" />
+    <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+    <button type="submit">Send</button>
+  </form>
 
 </body>
 </html>
+
+
