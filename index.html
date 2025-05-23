@@ -1,109 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VINOX Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINOX | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Vinox goofy animated logo */
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px) rotate(-10deg); }
-    }
-    .vinox-logo {
-      font-size: 4rem;
-      font-weight: 900;
-      color: #a83232;
-      text-align: center;
-      margin: 40px 0 20px;
-      animation: bounce 2s ease-in-out infinite;
-      user-select: none;
-      letter-spacing: 0.15em;
-      font-family: 'Segoe UI Black', sans-serif;
-      text-shadow: 2px 2px 6px #660000aa;
-    }
-    /* Navigation */
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      background-color: #3b0f1a;
-      padding: 15px 0;
-      font-weight: bold;
-    }
-    nav a {
-      color: #f4b41a;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffcc00;
-      text-decoration: underline;
-    }
-    /* Software logos container */
-    .software-logos {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 40px 0 10px;
-      flex-wrap: wrap;
-    }
-    .software-logos img {
-      width: 80px;
-      height: auto;
-      filter: drop-shadow(1px 1px 2px #a83232cc);
-      transition: transform 0.3s ease;
-    }
-    .software-logos img:hover {
-      transform: scale(1.1) rotate(10deg);
-      filter: drop-shadow(2px 2px 6px #ff4444);
-    }
-    /* Quote section */
-    .quote-section {
-      max-width: 600px;
-      margin: 20px auto 60px;
-      background-color: #660000cc;
-      padding: 20px;
-      border-radius: 10px;
-      color: #fff;
-      font-style: italic;
-      text-align: center;
-      font-size: 1.1rem;
-      box-shadow: 0 0 15px #a83232cc;
-    }
-  </style>
 </head>
+
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <header>
+    <h1 class="animated-title">VINOX</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <div class="vinox-logo">VINOX</div>
+  <section>
+    <h2>My Work</h2>
+    <div class="video-container">
+      <iframe src="https://drive.google.com/file/d/1vTtWt8x5D1CFD9_xU7kCgYPhEEIQbqtE/preview" allowfullscreen></iframe>
+      <iframe src="https://drive.google.com/file/d/1_JwNDfj69PmNaJHUEvpCCUF-dTyZH3pH/preview" allowfullscreen></iframe>
+      <iframe src="https://drive.google.com/file/d/14YogkqGbtZHNWksE3VAPblPvyMy_3bnE/preview" allowfullscreen></iframe>
+      <iframe src="https://drive.google.com/file/d/1EHRpdFniPJ9wsxWCQqdsJlH9M5SW6KYY/preview" allowfullscreen></iframe>
+    </div>
+  </section>
 
-  <h2 style="text-align:center; color:#fff;">My Work</h2>
-
-  <div class="video-container">
-    <!-- Replace these iframe src with your actual videos -->
-    <iframe src="https://drive.google.com/file/d/1vTtWt8x5D1CFD9_xU7kCgYPhEEIQbqtE/preview" allowfullscreen></iframe>
-    <iframe src="https://drive.google.com/file/d/1_JwNDfj69PmNaJHUEvpCCUF-dTyZH3pH/preview" allowfullscreen></iframe>
-    <iframe src="https://drive.google.com/file/d/14YogkqGbtZHNWksE3VAPblPvyMy_3bnE/preview" allowfullscreen></iframe>
-    <iframe src="https://drive.google.com/file/d/1EHRpdFniPJ9wsxWCQqdsJlH9M5SW6KYY/preview" allowfullscreen></iframe>
-  </div>
-
-  <div class="software-logos">
-    <img src="images/hitfilm.png" alt="HitFilm Express" title="HitFilm Express" />
-    <img src="images/capcut.png" alt="CapCut" title="CapCut" />
-    <img src="images/canva.png" alt="Canva" title="Canva" />
-    <img src="images/vn.png" alt="VN Video Editor" title="VN Video Editor" />
-  </div>
-
-  <div class="quote-section">
-    <p>"Software doesn’t matter, skills matter."</p>
-  </div>
+  <footer>
+    <p>© 2025 VINOX. All rights reserved.</p>
+  </footer>
 </body>
-</html>
 
+</html>
