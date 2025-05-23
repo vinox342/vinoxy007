@@ -1,37 +1,10 @@
 /* style.css */
-
 body, html {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
 }
-/* Navbar styling */
-.navbar {
-  background: rgba(107, 15, 26, 0.85); /* maroon-ish translucent */
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-.navbar a {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #f4b41a; /* pop of gold on hover */
-  text-decoration: underline;
-}
-
 
 body {
   background: linear-gradient(270deg, #6b0f1a, #888888, #3b0f1a, #666666);
@@ -48,18 +21,30 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-h2, p {
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
+header {
   text-align: center;
+  padding-bottom: 20px;
 }
 
-a {
-  color: #f4b41a;
-  text-decoration: none;
+.logo {
+  font-size: 3rem;
+  margin: 0;
 }
-a:hover {
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f4b41a;
+  font-weight: bold;
+}
+
+nav a:hover {
   text-decoration: underline;
+}
+
+.intro {
+  text-align: center;
+  margin: 40px 0;
 }
 
 .video-container {
@@ -78,54 +63,60 @@ a:hover {
   box-shadow: 0 0 10px #a83232aa;
 }
 
-form {
-  max-width: 400px;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input, form textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-  font-size: 1rem;
-}
-
-form button {
-  background-color: #6b0f1a;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-form button:hover {
-  background-color: #a83232;
-}
-
-/* VINOX logo entrance animation */
-.logo-title {
-  font-size: 4rem;
-  font-weight: bold;
-  color: white;
+.software-section {
   text-align: center;
-  margin-top: 40px;
-  animation: vinoxEnter 1.8s ease-out forwards;
-  opacity: 0;
-  transform: translateY(-50px);
-  letter-spacing: 10px;
-  text-shadow: 0 0 10px red, 0 0 20px #a83232;
+  margin-top: 60px;
 }
 
-@keyframes vinoxEnter {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.software-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.software-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.software-logos img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+blockquote {
+  font-style: italic;
+  color: #eee;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f4b41a;
+}
+
+blockquote img {
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f4b41a;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
 @media (max-width: 600px) {
@@ -134,5 +125,3 @@ form button:hover {
     height: 50vw;
   }
 }
-
-
